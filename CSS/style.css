@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.wrap_home {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* ---------------------- Header CSS start ---------------------- */
+.section_header {
+  width: 100%;
+  background-color: #be3144;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+.header_ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1.2rem;
+}
+.nav_list {
+  list-style: none;
+  padding: 1.4rem;
+}
+.nav_link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.928);
+  font-size: 22px;
+  font-weight: 500;
+}
+.nav_list:hover {
+  background-color: #45567d;
+}
+/* ---------------------- Header CSS end ---------------------- */
+
+/* ---------------------- About CSS ----------------------  */
+.section_about {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.about_text > h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 4rem;
+  color: #ffffffd1;
+}
+.about_text > h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: #be3144;
+}
+/* ---------------------- About CSS ----------------------  */
+
+/* ---------------------- work CSS ----------------------  */
+.section_work {
+  width: 100%;
+  background-color: #45567d;
+}
+.work_container {
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.work_container > h1 {
+  max-width: fit-content;
+  text-align: center;
+  font-size: 2.8rem;
+  color: white;
+  border-bottom: 2px solid white;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+.work_card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card_box {
+  width: 400px;
+  background-color: #303841;
+  margin-top: 2.5rem;
+}
+.card_box_link {
+  text-decoration: none;
+}
+.card_box_link > img {
+  width: 400px;
+  height: 370px;
+  object-fit: cover;
+}
+.card_title {
+  font-size: 21px;
+  padding: 1.5rem 0rem;
+  color: rgba(255, 255, 255, 0.91);
+  text-align: center;
+}
+.title_icon {
+  color: #303841;
+  transition: color 0.3s ease-out;
+}
+.card_title:hover .title_icon {
+  color: #ff7f50;
+}
+.add_new_card {
+  margin-top: 4rem;
+}
+.add_new_card > a {
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  background-color: #303841;
+  color: white;
+  transition: background 0.3s ease-out;
+  font-size: 22px;
+  border-radius: 3px;
+}
+.add_new_card > a > i {
+  margin-left: 5px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+.add_new_card > a:hover {
+  background: #be3144;
+}
+.add_new_card > a:hover i {
+  transform: translateX(2px);
+}
+/* ---------------------- work CSS ---------------------- */
+
+/* ---------------------- contact CSS ----------------------  */
+.section_contact {
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #303841;
+}
+.section_contact_frame1 > h1 {
+  color: rgba(255, 255, 255, 0.881);
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+}
+.section_contact_frame1 > p {
+  color: rgba(255, 255, 255, 0.782);
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.4;
+  margin-top: 12px;
+}
+
+.section_contact_frame2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.social_links {
+  text-decoration: none;
+  font-size: 26px;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  color: rgba(255, 255, 255, 0.942);
+}
+.social_links:hover {
+  transform: translateY(10px);
+}
+/* ---------------------- contact CSS ----------------------  */
+
+
+/* ---------------------- footer CSS ---------------------- */
+.section_footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background-color: #303841;
+  border-top: 4px solid #be3144;
+}
+.section_footer > p {
+  margin: 1rem;
+  color: rgba(255, 255, 255, 0.945);
+  font-size: 18px;
+  font-weight: 300;
+}
+/* ---------------------- footer CSS ---------------------- */
+
+/* ------------- media queries for responsive site ----------------  */
+
+@media screen and (max-width: 426px) {
+  .work_card {
+    display: flex;
+    justify-content: center;
+  }
+  .card_box {
+    width: 330px;
+    background-color: #303841;
+    margin-top: 2.5rem;
+  }
+  .card_box_link {
+    text-decoration: none;
+  }
+  .card_box_link > img {
+    width: 330px;
+    height: 370px;
+    object-fit: cover;
+  }
+  .section_contact {
+    height: auto;
+  }
+  .about_text > h1 {
+    font-size: 3rem;
+  }
+}
+/* ------------- media queries for responsive site ----------------  */
